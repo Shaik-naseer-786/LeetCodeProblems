@@ -18,10 +18,10 @@ class Solution {
                 return helper(nums, target, mid+1, e);
             }
         }
-        // if(target>=nums[mid] && target<=nums[e]){
-        //     return helper(nums, target, mid+1, e);
-        // }
-        // return helper(nums, target, s, mid-1);
-        return -1;
+        if(target>=nums[mid] && target<=nums[e]){
+            return helper(nums, target, mid+1, e);
+        }
+        return helper(nums, target, s, mid-1);
+        
     }
 }
