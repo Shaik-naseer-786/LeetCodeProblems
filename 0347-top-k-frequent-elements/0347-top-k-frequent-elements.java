@@ -11,9 +11,12 @@ class Solution {
                 map.put(i,1);
             }
         }
-        System.out.println(map.toString());
+        
         PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> map.get(b) - map.get(a));
+       
+        
         pq.addAll(map.keySet());
+        
 
         int[] res = new int[k];
         int i = 0;
