@@ -7,7 +7,7 @@ class Solution {
 
         }
         int n=set.size();
-        for(int i=1;i<n+2;i++){
+        for(int i=1;i<=n+1;i++){
             if(!set.contains(i)){
                 return i;
             }
